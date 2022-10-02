@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            // url "http://indooratlas-ltd.bintray.com/mvn-public"
+            url "https://dl.cloudsmith.io/public/indooratlas/mvn-public/maven/"
+
+        }
+
+
+    }
+}
+rootProject.name = "UdaysTest"
+include ':app'
+include ':TestLibrary'
